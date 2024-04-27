@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipher Encrypt/Decrypt & Hash SHA3-512</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/isomorphic-webcrypto@2.4.0/crypto.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha3/0.8.0/sha3.min.js"></script>
+</head>
+<body>
+<div class="container my-5">
+    <h1 class="text-center mb-4">Cipher Encrypt/Decrypt & Hash SHA3-512</h1>
+    <div class="form-group">
+        <label for="plaintext">Input plaintext:</label>
+        <textarea class="form-control" id="plaintext" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="result">Result:</label>
+        <textarea class="form-control" id="result" rows="3" readonly></textarea>
+    </div>
+    <div class="text-center">
+        <button class="btn btn-primary mr-2" id="encrypt-btn">Encrypt</button>
+        <button class="btn btn-primary mr-2" id="decrypt-btn">Decrypt</button>
+        <button class="btn btn-primary mr-2" id="hash-btn">Hash SHA3-512</button>
+    </div>
+</div>
+<script type="module" src="script/index.js"></script>
+</body>
+</html>
