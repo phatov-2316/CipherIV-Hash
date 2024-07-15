@@ -13,8 +13,16 @@
 <div class="container my-5">
     <h1 class="text-center mb-4">Cipher Encrypt/Decrypt & Hash SHA3-512</h1>
     <div class="form-group">
+        <label for="cipher-key-input">Input CIPHER KEY:</label>
+        <input class="form-control" id="cipher-key-input" placeholder="If empty, it takes a default value (Optional Input)">
+    </div>
+    <div class="form-group">
+        <label for="cipher-iv-input">Input CIPHER IV:</label>
+        <input class="form-control" id="cipher-iv-input" placeholder="If empty, it takes a default value (Optional Input)">
+    </div>
+    <div class="form-group">
         <label for="plaintext">Input plaintext:</label>
-        <textarea class="form-control" id="plaintext" rows="3"></textarea>
+        <textarea class="form-control" id="plaintext" rows="3" placeholder="Enter the text needed for hashing or encryption"></textarea>
     </div>
     <div class="form-group">
         <label for="result">Result:</label>
@@ -24,6 +32,13 @@
         <button class="btn btn-primary mr-2" id="encrypt-btn">Encrypt</button>
         <button class="btn btn-primary mr-2" id="decrypt-btn">Decrypt</button>
         <button class="btn btn-primary mr-2" id="hash-btn">Hash SHA3-512</button>
+        <br>
+        <button class="btn btn-warning mr-2 mt-2" id="gen-cipher-key-btn">Generate CIPHER KEY</button>
+        <button class="btn btn-warning mr-2 mt-2" id="gen-cipher-iv-btn">Generate CIPHER IV</button>
+    </div>
+    <div class="form-group">
+        <label for="result">Key generated:</label>
+        <input class="form-control text-center" id="result-secret-key" readonly />
     </div>
 </div>
 <script type="module" src="script/index.js"></script>
